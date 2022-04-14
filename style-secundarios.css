@@ -1,0 +1,79 @@
+.voltaMenu {
+    width: 58px;
+    height: 50px;
+    top: 455px;
+    left: 854px;
+    position: absolute;
+    background-color: #00a6ff;
+    color: white;
+}
+
+.voltaMenus {
+    width: 58px;
+    height: 50px;
+    top: 455px;
+    left: 854px;
+    position: absolute;
+    background-color: #00a6ff;
+    color: white;
+}
+
+
+.pix {
+    display: none;
+    margin-top: 136px;
+    margin-left: 685px;
+}
+
+.corpo {
+    background-color: white;
+    width: 389px;
+    height: 469px;
+    padding: 36px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.corpo > p {
+    margin-top: 22px;
+    margin-bottom: 10px;
+}
+
+.corpo > h1 {
+    margin-bottom: 20px;
+}
+
+.input-numeros {
+    background-color: #d7d7d7a8;
+    border: none;
+    height: 28px;
+    width: 213px;
+    border-radius: 6px;
+}
+
+.botao-transferir {
+    background-color: rgb(0, 166, 255);
+    width: 128px;
+    height: 38px;
+    color: white;
+    margin-left: 131px;
+    border: none;
+}
+
+
+.depositar,.sacar,.pagar-contas,.cartao,.investimentos,.cambio,.cheque,.seguro,.transferencia,.ancoPag,.conta {
+    display: none;
+    margin-top: 136px;
+    margin-left: 685px;
+}
+
+.cartao > div > img {
+    max-width: 270px;
+    width: 100%;
+}
+
+.imagem-de-bloqueio {
+    max-width: 200px;
+    width: 100%;
+}
+

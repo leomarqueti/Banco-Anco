@@ -1,0 +1,265 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #1688FF;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1200 800'%3E%3Cdefs%3E%3CradialGradient id='a' cx='0' cy='800' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%230d4fff'/%3E%3Cstop offset='1' stop-color='%230d4fff' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='b' cx='1200' cy='800' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%230b81ff'/%3E%3Cstop offset='1' stop-color='%230b81ff' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='c' cx='600' cy='0' r='600' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%230246ff'/%3E%3Cstop offset='1' stop-color='%230246ff' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='d' cx='600' cy='800' r='600' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%231688FF'/%3E%3Cstop offset='1' stop-color='%231688FF' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='e' cx='0' cy='0' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%230413FF'/%3E%3Cstop offset='1' stop-color='%230413FF' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='f' cx='1200' cy='0' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%230079FF'/%3E%3Cstop offset='1' stop-color='%230079FF' stop-opacity='0'/%3E%3C/radialGradient%3E%3C/defs%3E%3Crect fill='url(%23a)' width='1200' height='800'/%3E%3Crect fill='url(%23b)' width='1200' height='800'/%3E%3Crect fill='url(%23c)' width='1200' height='800'/%3E%3Crect fill='url(%23d)' width='1200' height='800'/%3E%3Crect fill='url(%23e)' width='1200' height='800'/%3E%3Crect fill='url(%23f)' width='1200' height='800'/%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+header {
+    color: white;
+    height: 132px;
+}
+
+header > h1 {
+    font-size: 67px;
+    text-align: right;
+    padding-top: 24px;
+    padding-right: 49px;
+}
+
+main {
+    position: absolute;
+}
+
+.lateral {
+    background-color: white;
+    margin: left;
+    height: 1016px;
+    width: 142px;
+    position: absolute;
+    top: -133px;
+    left: -2px;
+    box-shadow: 13px -5px 20px 2px #0000001f;
+}
+
+.lateral > p {
+    margin-left: 10px;
+}
+
+.saldo-cliente{
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.lateral > h3 {
+    margin-left: 31px;
+    margin-top: 7px;
+}
+
+.lateral > img {
+    max-width: 86px;
+    width: 100%;
+    margin-left: 16px;
+    margin-top: 13px;
+}
+
+.lateral > ul {
+    text-align: left;
+    margin-top: 23px;
+    font-size: 18px;
+    margin-left: 8px;
+}
+
+.lateral > ul > a > li {
+    color: black;
+    text-decoration: none;
+}
+
+.conjunto-botoes {
+    margin-left: 358px;
+    margin-top: 25px;
+}
+
+.botoes {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+button {
+    background-color: rgb(255, 255, 255);
+    color: rgb(41, 40, 40);
+    width: 241px;
+    height: 217px;
+    margin-left: 36px;
+    margin-top: 27px;
+    border: 2px solid #80808038;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.287);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+button:hover {
+    box-shadow: none;
+    border: 2px solid #242424c0;
+}
+
+
+button > img {
+    width: 66px;
+    margin-bottom: 13px;
+}
+
+
+
+@media only screen and (max-width: 1560px) {
+    .conjunto-botoes {
+        margin-left: 227px;
+        margin-top: 1px;
+    }
+  }
+
+  @media only screen and (max-width: 1400px) {
+    .conjunto-botoes {
+        margin-left: 205px;
+        margin-top: 53px;
+    }
+    button {
+        width: 185px;
+        height: 150px;
+        margin-left: 26px;
+    }
+  }
+  @media only screen and (max-width: 1100px) {
+    button {
+        width: 134px;
+        height: 182px;
+        margin-left: 26px;
+    }
+  }
+  @media only screen and (max-width: 900px) {
+    .botoes {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    button {
+        width: 218px;
+        height: 194px;
+        margin-left: 26px;
+    }
+    .conjunto-botoes {
+        margin-left: 146px;
+        margin-top: 13px;
+    }
+  }
+  @media only screen and (max-width: 694px) {
+    button {
+        width: 171px;
+        height: 139px;
+        margin-left: 26px;
+    }
+    .botoes {
+        margin: auto;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    .conjunto-botoes {
+        margin-left: 102px;
+        margin-top: 13px;
+    }
+    .lateral {
+        width: 116px;
+    }
+    .lateral > p {
+        margin-left: 8px;
+        font-size: 15px;
+        margin-top: 7px;
+    }
+    .lateral > h3 {
+        margin-left: 19px;
+        margin-top: 7px;
+    }
+  }
+  @media only screen and (max-width: 550px) {
+    header > h1 {
+        font-size: 36px;
+    }
+    button {
+        width: 134px;
+        height: 121px;
+        margin-left: 26px;
+    }
+    .conjunto-botoes {
+        margin-left: 72px;
+        margin-top: 13px;
+    }
+  }
+  @media only screen and (max-width: 490px) {
+    button {
+        width: 132px;
+        height: 125px;
+        margin-left: 26px;
+    }
+    .conjunto-botoes {
+        margin-left: 13px;
+        margin-top: -53px;
+    }
+    .lateral {
+        width: 52px;
+    }
+    .lateral:hover {
+        width: 152px;
+    }
+    .lateral > img {
+        max-width: 45px;
+        width: 100%;
+        margin-left: 5px;
+    }
+    .lateral:hover > img {
+        max-width: 112px;
+        width: 100%;
+        margin-left: 21px;
+    }
+    .lateral > p {
+        display: none;
+    }
+    .lateral:hover > p {
+        display: block;
+        margin-left: 17px;
+        font-size: 17px;
+    }
+    .lateral > ul {
+        display: none;
+    }
+    .lateral:hover > ul {
+        display: block;
+    }
+    .lateral > h3 {
+        display: none;
+    }
+    .lateral:hover > h3 {
+        display: block;
+        margin-left: 38px;
+    }
+  }
+  @media only screen and (max-width: 420px) {
+    .conjunto-botoes {
+        margin-left: 13px;
+        margin-top: -55px;
+    }
+  }
+
+  @media only screen and (max-width: 376px) {
+    .conjunto-botoes {
+        margin-left: 13px;
+        margin-top: -55px;
+    }
+    button {
+        width: 108px;
+        height: 110px;
+        margin-left: 26px;
+    }
+  }

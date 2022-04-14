@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-secundarios.css">
+    <title>Banco Anco</title>
+</head>
+<body>
+    <header><h1>Banco Anco</h1></header>
+    <main>
+        <section class="lateral">
+            <img src="imagens/perfil.jpg" alt="" srcset="">
+            <h3>Leonardo Marqueti</h3>
+            <p>Conta: 124452-6</p>
+            
+            <p class="saldo-cliente"></p>
+
+            <ul>
+                <a href="">
+                    <li>Pix</li>
+                </a>
+                <a href="">
+                    <li>Depositar</li>
+                </a>
+                <a href="">
+                    <li>Sacar</li>
+                </a>
+                <a href="">
+                    <li>Pagar conta</li>
+                </a>
+            </ul>
+
+            <ul>
+                <a href="">
+                    <li>Cartões</li>
+                </a>
+                <a href="">
+                    <li>Investimentos</li>
+                </a>
+                <a href="">
+                    <li>Cambio</li>
+                </a>
+                <a href="">
+                    <li>Cheque</li>
+                </a>
+            </ul>
+
+            <ul>
+                <a href="">
+                    <li>Seguro</li>
+                </a>
+                <a href="">
+                    <li>Transferencia</li>
+                </a>
+                <a href="">
+                    <li>AncoPag</li>
+                </a>
+                <a href="">
+                    <li>Conta</li>
+                </a>
+            </ul>
+        </section>
+
+        <section class="conjunto-botoes">
+            <div class="botoes">
+                <button onclick="acessarPix()"><img src="imagens/icon/pix.png" alt="" srcset="">Pix</button>
+                <button onclick="acessarDepositar()"><img src="imagens/icon/Depositar.png" alt="" srcset=""> Depositar</button>
+                <button onclick="acessarSacar()"><img src="imagens/icon/sacar.png" alt="" srcset="">Sacar</button>
+                <button onclick="acessarPagarContas()"><img src="imagens/icon/pagarconta.png" alt="" srcset="">Pagar Conta</button>
+            </div>
+            <div class="botoes">
+                <button onclick="acessarCartoes()"><img src="imagens/icon/Cartoes.png" alt="" srcset=""> Cartões</button>
+                <button onclick="acessarInvestimentos()"><img src="imagens/icon/investimento.png" alt="" srcset="">Investimentos</button>
+                <button onclick="acessarCambio()"><img src="imagens/icon/cambio.png" alt="" srcset="">Cambio</button>
+                <button onclick="acessarCheque()"><img src="imagens/icon/cheque.png" alt="" srcset="">Cheque</button>
+            </div>
+            <div class="botoes">
+                <button onclick="acessarSeguro()"><img src="imagens/icon/seguro.png" alt="" srcset="">Seguro</button>
+                <button onclick="acessarTransferencia()"><img src="imagens/icon/transferencia.png" alt="" srcset="">Transferencia</button>
+                <button onclick="acessarAncoPag()"><img src="imagens/icon/ancopag.png" alt="" srcset="">AncoPag</button>
+                <button onclick="acessarConta()"><img src="imagens/icon/conta.png" alt="" srcset="">Conta</button>
+            </div>
+        </section>
+
+        <section class="pix">
+            <div class="corpo">
+                <h1>PIX</h1>
+                <p>Chave Pix do remetente:</p>
+                <input type="text" class="input-numeros">
+                <p>Digite o valor que deseja enviar com pix:</p>
+                <input type="number" class="input-numeros" id="input-numeros-envio">
+                <button onclick="pixBotao()" class="botao-transferir" >Transferir</button>
+                <p class="resposta"></p>
+                <img src="imagens/logo-pix-256.png" alt="" srcset="">
+                <button class="voltaMenu" onclick="voltaMenu()">Voltar</button>
+            </div>
+        </section>
+
+        <section class="depositar">
+            <div class="corpo">
+                <h1>Depositar</h1>
+                <p>Digite o valor do Deposito:</p>
+                <input type="number" class="input-numeros" id="input-numeros-depositar">
+                <button onclick="depositarBotao()" class="botao-transferir" >Depositar</button>
+                <p class="resposta"></p>
+                <button class="voltaMenu" onclick="voltaMenu()">Voltar</button>
+            </div>
+        </section>
+
+        <section class="sacar">
+            <div class="corpo">
+                <h1>Sacar</h1>
+                <p>Digite o valor que deseja sacar:</p>
+                <input type="number" class="input-numeros" id="input-numeros-sacar">
+                <button onclick="sacarBotao()" class="botao-transferir" >Sacar</button>
+                <p class="resposta"></p>
+                <button class="voltaMenu" onclick="voltaMenu()">Voltar</button>
+            </div>
+        </section>
+
+        <section class="pagar-contas">
+            <div class="corpo">
+                <h1>Pagar Contas</h1>
+                <p>Codigo de barras:</p>
+                <input type="text" class="input-numeros">
+                <p>Digite o valor que deseja enviar com pix:</p>
+                <input type="number" class="input-numeros" id="input-numeros-pagar-contas">
+                <button onclick="pagarContasBotao()" class="botao-transferir" >Pagar</button>
+                <p class="resposta"></p>
+                <button class="voltaMenu" onclick="voltaMenu()">Voltar</button>
+            </div>
+        </section>
+
+        <section class="cartao">
+            <div class="corpo">
+                <h1>Cartões</h1>
+                <img src="imagens/cartao/cartao.png" alt="" srcset="">
+                <button class="voltaMenu" onclick="voltaMenu()">Voltar</button>
+            </div>
+        </section>
+
+        <section class="investimentos">
+            <div class="corpo">
+                <h1>Investimentos</h1>
+                <img class="imagem-de-bloqueio" src="imagens/icon/cadeado.png" alt="" srcset="">
+                <button class="voltaMenu" onclick="voltaMenu()">Voltar</button>
+            </div>
+        </section>
+
+        <section class="cambio">
+            <div class="corpo">
+                <h1>Cambio</h1>
+                <img class="imagem-de-bloqueio" src="imagens/icon/cadeado.png" alt="" srcset="">
+                <button class="voltaMenu" onclick="voltaMenu()">Voltar</button>
+            </div>
+        </section>
+
+        <section class="cheque">
+            <div class="corpo">
+                <h1>Cheque</h1>
+                <img class="imagem-de-bloqueio" src="imagens/icon/cadeado.png" alt="" srcset="">
+                <button class="voltaMenu" onclick="voltaMenu()">Voltar</button>
+            </div>
+        </section>
+
+        <section class="seguro">
+            <div class="corpo">
+                <h1>Seguro</h1>
+                <img class="imagem-de-bloqueio" src="imagens/icon/cadeado.png" alt="" srcset="">
+                <button class="voltaMenu" onclick="voltaMenu()">Voltar</button>
+            </div>
+        </section>
+
+        <section class="transferencia">
+            <div class="corpo">
+                <h1>Transferencia</h1>
+                <img class="imagem-de-bloqueio" src="imagens/icon/cadeado.png" alt="" srcset="">
+                <button class="voltaMenu" onclick="voltaMenu()">Voltar</button>
+            </div>
+        </section>
+
+        <section class="ancoPag">
+            <div class="corpo">
+                <h1>AncoPag</h1>
+                <img class="imagem-de-bloqueio" src="imagens/icon/cadeado.png" alt="" srcset="">
+                <button class="voltaMenu" onclick="voltaMenu()">Voltar</button>
+            </div>
+        </section>
+
+        <section class="conta">
+            <div class="corpo">
+                <h1>Conta</h1>
+                <img class="imagem-de-bloqueio" src="imagens/icon/cadeado.png" alt="" srcset="">
+                <button class="voltaMenu" onclick="voltaMenu()">Voltar</button>
+            </div>
+        </section>
+
+    </main>
+    <script src="cliente.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
