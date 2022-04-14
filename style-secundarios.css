@@ -61,7 +61,7 @@
 }
 
 
-.depositar,.sacar,.pagar-contas,.cartao,.investimentos,.cambio,.cheque,.seguro,.transferencia,.ancoPag,.conta {
+.pix,.depositar,.sacar,.pagar-contas,.cartao,.investimentos,.cambio,.cheque,.seguro,.transferencia,.ancoPag,.conta {
     display: none;
     margin-top: 136px;
     margin-left: 685px;
@@ -77,3 +77,99 @@
     width: 100%;
 }
 
+@media only screen and (max-width: 1560px) {
+    .pix {
+        display: none;
+        margin-top: 136px;
+        margin-left: 518px;
+    }
+    .corpo {
+        position: relative;
+    }
+    .voltaMenu {
+        top: 302px;
+        left: 179px;
+    }
+  }
+
+  @media only screen and (max-width: 1300px) {
+
+  }
+  @media only screen and (max-width: 1200px) {
+    .pix,.depositar,.sacar,.pagar-contas,.cartao,.investimentos,.cambio,.cheque,.seguro,.transferencia,.ancoPag,.conta {
+        margin-left: 399px;
+    }
+  }
+  @media only screen and (max-width: 1000px) {
+    .pix,.depositar,.sacar,.pagar-contas,.cartao,.investimentos,.cambio,.cheque,.seguro,.transferencia,.ancoPag,.conta {
+        margin-left: 278px;
+    }
+  }
+  @media only screen and (max-width: 800px) {
+    .pix,.depositar,.sacar,.pagar-contas,.cartao,.investimentos,.cambio,.cheque,.seguro,.transferencia,.ancoPag,.conta {
+        margin-left: 226px;
+    }
+  }
+  @media only screen and (max-width: 700px) {
+    .pix,.depositar,.sacar,.pagar-contas,.cartao,.investimentos,.cambio,.cheque,.seguro,.transferencia,.ancoPag,.conta {
+        margin-left: 160px;
+    }
+  }
+  @media only screen and (max-width: 670px) {
+    .pix,.depositar,.sacar,.pagar-contas,.cartao,.investimentos,.cambio,.cheque,.seguro,.transferencia,.ancoPag,.conta {
+        margin-left: 136px;
+    }
+  }
+  @media only screen and (max-width: 615px) {
+    .pix,.depositar,.sacar,.pagar-contas,.cartao,.investimentos,.cambio,.cheque,.seguro,.transferencia,.ancoPag,.conta {
+        margin-left: 136px;
+    }
+    .corpo {
+        width: 282px;
+        height: 489px;
+    }
+    .botao-transferir {
+        margin-left: 81px;
+    }
+    .voltaMenu {
+        top: 302px;
+        left: 127px;
+    }
+  }
+  @media only screen and (max-width: 490px) {
+    .pix,.depositar,.sacar,.pagar-contas,.cartao,.investimentos,.cambio,.cheque,.seguro,.transferencia,.ancoPag,.conta {
+        margin-left: 64px;
+        margin-top: 14px;
+    }
+    .corpo {
+        width: 234px;
+        height: 492px;
+    }
+    .botao-transferir {
+        margin-left: 52px;
+    }
+    .voltaMenu {
+        top: 312px;
+        left: 100px;
+    }
+  }
+  @media only screen and (max-width: 415px) {
+    .pix,.depositar,.sacar,.pagar-contas,.cartao,.investimentos,.cambio,.cheque,.seguro,.transferencia,.ancoPag,.conta {
+        margin-left: 77px;
+        margin-top: 14px;
+    }
+  }
+  @media only screen and (max-width: 390px) {
+    .pix,.depositar,.sacar,.pagar-contas,.cartao,.investimentos,.cambio,.cheque,.seguro,.transferencia,.ancoPag,.conta {
+        margin-left: 67px;
+        margin-top: 14px;
+    }
+  }
+  
+
+  @media only screen and (max-width: 376px) {
+    .pix {
+        margin-left: 59px;
+        margin-top: -41px;
+    }
+  }
